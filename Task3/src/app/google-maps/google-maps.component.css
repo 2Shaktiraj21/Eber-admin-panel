@@ -1,0 +1,14 @@
+#map{
+    width: 100vw;
+    height: 80vh;
+}
+.message{
+    font-size: 25px;
+    font-weight: 800;
+}
+.outside-polygon{
+    color: red;
+}
+.inside-polygon{
+    color: green;
+}

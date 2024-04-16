@@ -1,0 +1,12 @@
+
+
+
+ <input type="text" id="searchBox" class="form-control" placeholder="Enter a location..." #searchBox>
+<button class="my-1 form-control btn btn-dark" (click)="showLocation()">X</button>
+<div id="map"></div>
+
+
+<p *ngIf="marker" [ngClass]="{ 'inside-polygon': isMarkerInsidePolygon(), 'outside-polygon': !isMarkerInsidePolygon(),'message':1 }">
+   {{ isMarkerInsidePolygon() ? 'Yes, Your entered location belongs to drawn zone.' : 'Sorry! Entered location doesn’t belong to drawn zone.' }}
+  </p>
+  
